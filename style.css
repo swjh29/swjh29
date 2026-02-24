@@ -1,0 +1,140 @@
+/* style.css */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #fcfcfc;
+    --text-color: #333;
+    --light-text: #666;
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+    min-height: 100vh;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    font-weight: 300;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+}
+
+/* Content */
+h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Entry Styling (for lists) */
+.entry {
+    margin-bottom: 2rem;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.entry-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #2c3e50;
+}
+
+.entry-date {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.entry-subtitle {
+    color: #555;
+    margin-top: 4px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    color: #aaa;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
